@@ -14,9 +14,9 @@
     <%= f.text_field :website %>
   </div>
 
-  <%= turbo_frame_tag "foo" do %>
-    <%= link_to "modify partial", user_step_path(id: "social", some_variable: "world") %>
-    <%= render partial: "partial", locals: { some_variable: "hello" } %>
-  <% end %>
+  <%= link_to "modify partial", user_step_path(id: "social", some_variable: "world") %>
 
+  <%= turbo_frame_tag "foo_turbo_frame" do %>
+  <% end %>
+  
 <% end %>

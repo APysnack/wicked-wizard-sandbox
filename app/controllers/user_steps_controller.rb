@@ -7,7 +7,8 @@ class UserStepsController < ApplicationController
 
       case step
       when :social 
-        format.turbo_stream { render turbo_stream: turbo_stream.update("foo", partial: "user_steps/partial", locals: { some_variable: params[:some_variable] }) }
+        @some_variable = params[:some_variable].present? ? params[:some_variable] : "hello"
+        # format.turbo_stream { render turbo_stream: turbo_stream.append("foo_turbo_frame", partial: "user_steps/partial", locals: { some_variable: @some_variable }) }
       end
 
       @user = current_user
