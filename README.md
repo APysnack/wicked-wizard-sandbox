@@ -1,25 +1,5 @@
-# README
+Very basic example of wicked wizard multistep form for debugging purposes. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uses some of the source code from railscast, but their versioning was a bit outdated: 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# wicked-wizard-sandbox
+http://railscasts.com/episodes/346-wizard-forms-with-wicked
