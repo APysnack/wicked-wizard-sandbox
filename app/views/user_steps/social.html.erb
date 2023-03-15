@@ -17,6 +17,7 @@
   <%= link_to "modify partial", user_step_path(id: "social", some_variable: "world") %>
 
   <%= turbo_frame_tag "foo_turbo_frame" do %>
+    <%= render partial: "partial", locals: { some_variable: "hello" } %>
   <% end %>
-  
+
 <% end %>
